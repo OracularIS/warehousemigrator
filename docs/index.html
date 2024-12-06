@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Warehouse Migrator</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -13,8 +13,8 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'Moca Client',
-      repo: 'OracularIS/mocaclient',
+      name: 'Warehouse Migrator',
+      repo: 'OracularIS/warehousemigrator',
       homepage: 'readme.md',
       coverpage: true,
       search: 'auto', // default,
@@ -27,46 +27,8 @@
         placeholder: 'Type to search',
         depth: 6,
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        namespace: 'moca-client',
-      },
-      vueGlobalOptions: {
-        data: {
-          mocaMMR: "",
-        },
-        created() {
-          this.fetchXMLData();
-        },
-        methods: {
-          fetchXMLData() {
-            const proxyUrl = "https://api.allorigins.win/raw?url=";
-            const targetUrl =
-              "https://autoupdate.oracular.com/mocaclient/updates.xml";
-
-            fetch(proxyUrl + encodeURIComponent(targetUrl))
-              .then((response) => {
-                if (!response.ok) {
-                  throw new Error("Network response was not ok");
-                }
-                return response.text();
-              })
-              .then((data) => {
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(data, "application/xml");
-
-                this.mocaMMR =
-                  xmlDoc.getElementsByTagName("MajorVersion")[0].textContent +
-                  `.` +
-                  xmlDoc.getElementsByTagName("MinorVersion")[0].textContent +
-                  `.` +
-                  xmlDoc.getElementsByTagName("Revision")[0].textContent;
-              })
-              .catch((error) =>
-                console.error("Error fetching the XML file:", error)
-              );
-          },
-        },
-      },
-      
+        namespace: 'warehouse-migrator',
+      },    
     }
   </script>
   <!-- Vue.js Production CDN -->
@@ -75,22 +37,5 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <script>
-    // Initialize Vue instance after Docsify is ready
-    window.$docsify.plugins = [].concat(window.$docsify.plugins, function(hook, vm) {
-      hook.doneEach(function() {
-        // Ensure Vue only initializes once
-        if (!window.vueApp) {
-          window.vueApp = new Vue({
-            el: '#apptest',
-            data: window.$docsify.vueGlobalOptions.data,
-            created: window.$docsify.vueGlobalOptions.created,
-            methods: window.$docsify.vueGlobalOptions.methods
-          });
-        }
-      });
-    });
-  </script>
-</body>
 </body>
 </html>
