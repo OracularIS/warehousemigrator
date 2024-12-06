@@ -1,4 +1,4 @@
-![logo]()
+![logo](./.attachments/WMS%20Products-03.png)
 
 # Warehouse Migrator
 
