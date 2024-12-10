@@ -1,4 +1,4 @@
-![logo](./.attachments/WMS%20Products-03.png)
+<img src="./.attachments/logo.png" width="50%" height="50%" alt="Logo" style="display: block; margin-left: auto; margin-right: auto;"/>
 
 # Warehouse Migrator
 
