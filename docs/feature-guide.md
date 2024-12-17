@@ -1,3 +1,12 @@
+# Smart Migrator Features
+
+Smart Migrator simplifies data migration with key functionalities:
+
+- Configuration File  
+- Extract  
+- Load  
+- Validate Load  
+
 ## Configuration File Setup
 
 The Smart Warehouse Migrator offers two methods for configuration:
