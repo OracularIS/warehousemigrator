@@ -1,6 +1,9 @@
 # Tools
+  **Tools** offers two options 
+  1. Remove Warehouse
+  2. Options
 
-![](./.attachments/tool.png)
+  ![](./.attachments/tool.png)
 
 ## Remove Warehouse
 
