@@ -1,7 +1,7 @@
 # Tools
-  **Tools** offers two options 
-  1. Remove Warehouse
-  2. Options
+  **Tools** provides two key options for managing your warehouse operations:
+  1. **Remove Warehouse**
+  2. **Options**
 
   ![](./.attachments/tool.png)
 
@@ -12,7 +12,7 @@
   - **Server (Required)**
     - Dropdown to select the server where the warehouse resides.
 
-  - **Connect**
+  - **Connect**as
     - Establishes a connection to the selected server.
 
   - **User Authentication**
@@ -38,5 +38,6 @@
   ---
 
 ## Options Submenu
+  The Options submenu allows you to configure various settings and preferences for the warehouse management system.
 
 ![](./.attachments/option.png)
