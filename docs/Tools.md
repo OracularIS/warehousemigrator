@@ -2,7 +2,7 @@
   **Tools** provides two key options for managing your warehouse operations:
   1. **Remove Warehouse**
   2. **Options**
-
+aaa
   ![](./.attachments/tool.png)
 
 ## Remove Warehouse
@@ -38,6 +38,28 @@
   ---
 
 ## Options Submenu
-  The Options submenu allows you to configure various settings and preferences for the warehouse management system.
-
 ![](./.attachments/option.png)
+
+This section outlines the various options available when downloading XML files from the cloud.
+
+**Source Version:**
+
+This dropdown menu allows you to select the specific source version of the XML files you wish to download.
+
+**Destination Version:**
+
+This dropdown menu allows you to select the specific destination version of the XML files you wish to download.
+
+**File Location:**
+
+This field displays the default location where the downloaded XML files will be saved. You can modify this path by clicking the **Browse...** button and selecting a new destination folder.
+
+**Download Options:**
+
+* **All:** Selecting this option will download both the load and extract versions of the XML files.
+* **Load:** Selecting this option will download only the load version of the XML files.
+* **Extract:** Selecting this option will download only the extract version of the XML files.
+
+**Download Button:**
+
+Once you have selected your desired options, click the **Download** button to initiate the download process.
