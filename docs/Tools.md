@@ -2,7 +2,7 @@
   **Tools** provides two key options for managing your warehouse operations:
   1. **Remove Warehouse**
   2. **Options**
-aaa
+
   ![](./.attachments/tool.png)
 
 ## Remove Warehouse
