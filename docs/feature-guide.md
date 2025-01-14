@@ -9,7 +9,7 @@ Smart Migrator simplifies data migration with key functionalities:
 
 ## Configuration File Setup
 
-The Smart Warehouse Migrator offers two methods for configuration:
+The Smart Warehouse Migrator provides two configuration options for seamless setup.
 
   1. **Using the Smart API**: Provides a streamlined setup process.
 ![](./.attachments/smartapi.png)
@@ -140,9 +140,12 @@ The **Load Tab** enables users to load extracted data onto the server by specify
 ---
 
 - **Direct Load**
+
+This method directly loads the extracted data onto the destination server with a simple click and selection process. Remote loading between different environments is supported through remote calls.
+
+
 ![](./.attachments/direct_load.png)
  
-This method directly loads the extracted data onto the destination server with a simple click and selection process. Remote loading between different environments is supported through remote calls.
 
  **Key Options:**
 
@@ -183,9 +186,11 @@ The rollout file contains all necessary data and table details, which can be loa
 
 ## Validate Load Overview
 
+The **Validate Load** feature ensures that the data loaded into the destination database matches the extracted data. It helps identify errors and discrepancies during the data loading process, ensuring data integrity.
+
 ![](./.attachments/validate.png)
 
-The **Validate Load** feature ensures that the data loaded into the destination database matches the extracted data. It helps identify errors and discrepancies during the data loading process, ensuring data integrity.
+
 
 ---
 

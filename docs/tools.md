@@ -7,7 +7,11 @@
 
 ## Remove Warehouse
 
+This interface provides secure and customizable options for managing warehouse removal while allowing for data-specific actions and backups.
+
+
 ![](./.attachments/remove_warehouse.png)
+
 
   - **Server (Required)**
     - Dropdown to select the server where the warehouse resides.
@@ -33,7 +37,7 @@
   - **Remove**: Executes the warehouse removal process based on the specified options.
   - **Cancel**: Discards changes and exits the interface.
 
-  This interface provides secure and customizable options for managing warehouse removal while allowing for data-specific actions and backups.
+  
 
   ---
 

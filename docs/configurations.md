@@ -15,7 +15,7 @@ This interface provides a user-friendly platform for configuring and managing th
 - **Where Clause**
     - Field to input conditions for selective data removal (e.g., SQL WHERE clause).
 
-- ***Catch Exception**
+- **Catch Exception**
     - Predefined exception codes to handle errors during the removal process.
 
 - **Data Type**
