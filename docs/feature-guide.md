@@ -45,6 +45,12 @@ The extraction process is customizable, allowing users to extract data based on 
   - **Specify Modules and Exclude Tables:**  
       Users can fine-tune the extraction process by selecting only relevant modules or tables and excluding unnecessary ones. This is particularly useful for focusing on specific aspects of warehouse data.
 
+      ![](./.attachments/table_extract.png)
+       When a user selects a specific module (e.g., ITEM) from the Specific Modules list, the Exclude Tables section should dynamically display only the tables related to the selected module. Users should be able to select and exclude multiple tables from this filtered list during extraction.
+
+       ![](./.attachments/extract2.png)
+       If no specific module is selected, users can still exclude multiple tables by manually selecting them from the Exclude Tables list.
+
   - **Specify Extract Path and Name:**  
       These options allow users to specify where the extracted data will be saved and name the extracted folder. This customization helps users organize their data effectively. Default Extract Path can be set in **Settings > User Preferences**.
 
@@ -127,6 +133,11 @@ The **Load Tab** enables users to load extracted data onto the server by specify
   - **Exclude Tables**
     - Allows filtering to exclude selected tables from being loaded based on the chosen modules.
 
+    ![](./.attachments/load_table_extract.png)
+    When a user selects a specific module (e.g., ITEM) from the Specific Modules list, the Exclude Tables section should dynamically display only the tables related to the selected module. Users should be able to select and exclude multiple tables from this filtered list.
+
+    ![](./.attachments/load2.png)
+    If no specific module is selected, users can still exclude multiple tables by manually selecting them from the Exclude Tables list.
   - **Specific Load Operation**
     - Choose between different load methods for specific operations:
     - **Change Only**: Loads only modified data, ideal for incremental updates.
