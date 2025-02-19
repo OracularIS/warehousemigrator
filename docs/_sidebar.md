@@ -5,5 +5,4 @@
 - [Getting Started](./getting-started.md)
 - [Feature Guide](./feature-guide.md)
 - [Settings](./settings.md)
-- [Configurations](./configurations.md)
 - [Tools](./tools.md)

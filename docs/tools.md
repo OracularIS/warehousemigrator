@@ -36,6 +36,8 @@ This interface provides secure and customizable options for managing warehouse r
   - **Backup**: Creates a backup of the warehouse data before initiating removal.
   - **Remove**: Executes the warehouse removal process based on the specified options.
   - **Cancel**: Discards changes and exits the interface.
+ 
+   **NOTE:** This feature is currently unavailable 
 
   
 
