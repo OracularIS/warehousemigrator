@@ -29,23 +29,6 @@ To use the Warehouse Migrator tool, the MOCA Client must be installed.
 
 - If not installed, follow the instructions at [Smart Moca Client-Installation](https://oracularis.github.io/mocaclient/#/./getting-started?id=installation).
   
-### Handling moca.jar file to launch WH migrator
-
-On initial Smart MOCA Client installation, by default system includes ossimoca.jar in the `C:\Program Files (x86)\Oracular MOCA Client\lib` directory instead of moca.jar. 
-
-![OSSIMOCAJAR1](./.attachments/mocajar1.png)
-
-However to launch warehouse migrator, it is recommended to use BlueYonder's moca.jar instead of ossimoca.jar.
-
-Follow the steps below to use moca.jar:
-
-1. Navigate to the $MOCADIR/lib, located in your Moca Installation folder.
-2. Remove the existing ossimoca.jar file.
-3. Place Blueyonder's moca.jar file in the same location.
-
-    ![OSSIMOCAJAR2](./.attachments/mocajar2.png)
-
-This process will allow you to launch warehouse migrator within Smart Moca Client successfully.
 
 ### Environment Setup for Warehouse Migrator
 
@@ -62,10 +45,18 @@ This process will allow you to launch warehouse migrator within Smart Moca Clien
 
   ![EditServers1](./.attachments/server1.png)
 
-### Warehouse Migrator Cloud Connect
-After successfull installation of Smart Moca Client, we have to configure the Warehouse Migrator. 
+## Pre-requisites to launch Smart Moca Client
+  1. **Validate moca.jar file to launch WH migrator**
 
-To configure warehouse migrator in smart moca client, follow the instructions below:
+      On initial Smart MOCA Client installation, by default system includes moca.jar in the `C:\Users\AppData\Roaming\SmartMOCAClient\sw\smc`. Make sure to have moca.jar file in this directory.
+
+      ![EditServers](./.attachments/mocajar.png)
+
+2. **Warehouse Migrator Cloud Connect**
+
+    After successfull installation of Smart Moca Client, we have to configure the Warehouse Migrator. 
+
+    To configure warehouse migrator in smart moca client, follow the instructions below:
 
 -	Go to [Smart Apps](https://apps.smart-is.com/) or scan the QR code and create your account.
   ![SmartApp](./.attachments/smart1.png)
@@ -95,7 +86,7 @@ Follow below steps to launch warehouse migrator:
 
 - The Warehouse Migrator will get launch, indicating that the configuration was successful and the tool is ready for use.
 
-  ![Addon1](./.attachments/addon2.png)
+  ![Addon1](./.attachments/smartapi.png)
 
 
 
