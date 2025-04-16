@@ -17,8 +17,6 @@ Following are the key attributes of warehouse migrator:
 - **Validate Load:** The user can validate the data loaded with the destination database and the extracted data.
 - **User Preferences:** The user can change default directories and change the name prefixes of the files.
 - **Server Connections:** The user can add/update and remove the servers by providing the server's details.
-- **Migration Configurations:** The user can add any custom data that is not present in the standard BY WMS product.
-- **Migration Modules:** The user can configure new modules and delete existing ones. 
-- **Configuration Removal:** The user can remove the configurations of custom tables for a specific warehouse.
 - **Warehouse Removal:** The user can remove a warehouse or its specific data on the connected server. 
+
 

@@ -29,21 +29,7 @@ To use the Warehouse Migrator tool, the MOCA Client must be installed.
 
 - If not installed, follow the instructions at [Smart Moca Client-Installation](https://oracularis.github.io/mocaclient/#/./getting-started?id=installation).
   
-### Handling moca.jar file to launch WH migrator
 
-On initial Smart MOCA Client installation, by default system includes ossimoca.jar in the `C:\Program Files (x86)\Oracular MOCA Client\lib` directory instead of moca.jar. 
-
-![OSSIMOCAJAR1](./.attachments/mocajar1.png)
-
-However to launch warehouse migrator, it is recommended to use BlueYonder's moca.jar instead of ossimoca.jar.
-
-Follow the steps below to use moca.jar:
-
-1. Navigate to the $MOCADIR/lib, located in your Moca Installation folder.
-2. Remove the existing ossimoca.jar file.
-3. Place Blueyonder's moca.jar file in the same location.
-
-    ![OSSIMOCAJAR2](./.attachments/mocajar2.png)
 
 This process will allow you to launch warehouse migrator within Smart Moca Client successfully.
 

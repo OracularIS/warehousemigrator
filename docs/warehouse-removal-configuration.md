@@ -1,6 +1,4 @@
-# Configurations
-
-## Warehouse Removal Configuration
+# Warehouse Removal Configuration
 
 This interface provides a user-friendly platform for configuring and managing the removal of specific tables or datasets from the warehouse. It ensures efficient and accurate data handling while maintaining compliance with operational requirements and business rules.
 
