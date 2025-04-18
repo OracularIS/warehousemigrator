@@ -6,13 +6,14 @@ Smart Migrator simplifies data migration with key functionalities:
 The Configuration File Tab lets users upload through Smart API or a custom file to define how data is extracted, mapped, transformed, and loaded. After selecting the file, users connect to the source server securely with credentials. This setup offers flexibility and control over the data migration process.
 
 ### Key Components:
+
 - **Flexible Configuration**: Choose between Smart API setup or custom file.
 - **Source Server Authentication**: Authenticate with your source server using a username and password.
 - **Customizable Data Migration Flow**: Configure extraction, transformation, and loading processes tailored to your needs.
 
  For detailed instructions, please refer to the [Configuration File](./configuration-file.md) section.
 
- ---
+---
 
 ## Extract
 Extract Tab allows users to customize what they extract from entire warehouses to specific modules or tables. Options include setting paths, excluding tables or columns, running test extracts, and generating logs, ensuring precise and efficient data extraction.

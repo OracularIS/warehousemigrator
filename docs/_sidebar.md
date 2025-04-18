@@ -2,7 +2,7 @@
 
 - [Home](./readme.md)
 - [Why Use Warehouse Migrator?](./why-warehousemigrator.md)
-- [Quick Start.md](./quick-start.md)
+- [Quick Start](./quick-start.md)
 - [Features Overview](./features-overview.md)
 - [Configuration File](./configuration-file.md)
 - [Extract](./extract.md)
