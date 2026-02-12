@@ -2,18 +2,6 @@
 
 Smart Migrator simplifies data migration with key functionalities:
 
-## Configuration File
-The Configuration File Tab lets users upload through Smart API or a custom file to define how data is extracted, mapped, transformed, and loaded. After selecting the file, users connect to the source server securely with credentials. This setup offers flexibility and control over the data migration process.
-
-### Key Components:
-
-- **Flexible Configuration**: Choose between Smart API setup or custom file.
-- **Source Server Authentication**: Authenticate with your source server using a username and password.
-- **Customizable Data Migration Flow**: Configure extraction, transformation, and loading processes tailored to your needs.
-
- For detailed instructions, please refer to the [Configuration File](./configuration-file.md) section.
-
----
 
 ## Extract
 Extract Tab allows users to customize what they extract from entire warehouses to specific modules or tables. Options include setting paths, excluding tables or columns, running test extracts, and generating logs, ensuring precise and efficient data extraction.
@@ -52,5 +40,19 @@ The Validate Load feature compares data in the destination server with the extra
 
 For detailed instructions, please refer to the [Validate Load](./validate-load.md) section.
 
+## Remove Warehouse 
+The Remove Warehouse feature provides a secure and controlled way to delete an entire warehouse or specific data from a selected server.
 
+ It includes authentication, selective removal options, and backup capabilities to ensure safe operations.
 
+ For detailed instructions, please refer to the [Remove Warehouse](./remove-warehouse.md) section.
+
+## Options
+
+This feature allows Download XML.This feature allows users to retrieve version-specific XML files directly from the cloud. Users can select the required source and destination versions, choose the download type (Load, Extract, or both), and specify the save location.
+
+This functionality ensures that the correct XML versions are available for migration and configuration processes.
+
+For step-by-step instructions and detailed field descriptions, please refer to the [Download XML Files](./download-xml-files.md) section.
+
+---

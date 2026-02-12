@@ -1,4 +1,4 @@
-## Get started with Warehouse Migrator
+# Getting Started
 
 This section will guide you through the initial steps to get you up and running with our powerful and intuitive software. 
 
@@ -6,84 +6,177 @@ This section will guide you through the initial steps to get you up and running 
 
 Following are the pre-requisites before launching warehouse migrator:
 
-### System Requirements
+- **System Requirements**
 
-Ensure your system meets the following minimum requirements before proceeding:
+  Ensure your system meets the following minimum requirements before proceeding:
 
-- Operating System:
+  - Operating System:
     <dd>- Windows 7 or later</dd>
-- Processor:
+  - Processor:
     <dd>- Intel Core i3 or equivalent
-- Memory:
+  - Memory:
     <dd>- 4 GB RAM</dd>
-- Storage:
+  - Storage:
     <dd>- 500 MB available space</dd>
-- Internet Connection: 
+  - Internet Connection: 
     <dd>- Required for initial setup and updates</dd>
-- Java Version: 
+  - Java Version: 
     <dd>- Java 1.8 or higher</dd>
 
-### Smart Moca Client Installation
+- **Smart Moca Client Installation**
 
-To use the Warehouse Migrator tool, the MOCA Client must be installed. 
+  To use the Warehouse Migrator tool, the MOCA Client must be installed. 
 
-- If not installed, follow the instructions at [Smart Moca Client-Installation](https://oracularis.github.io/mocaclient/#/./getting-started?id=installation).
+  - If not installed, follow the instructions at [Smart Moca Client-Installation](https://oracularis.github.io/mocaclient/#/./getting-started?id=installation).
   
 
 
-This process will allow you to launch warehouse migrator within Smart Moca Client successfully.
+  This process will allow you to launch warehouse migrator within Smart Moca Client successfully.
 
-### Environment Setup for Warehouse Migrator
+## Environment Setup for Warehouse Migrator
 
 - To setup your servers, navigate to File > Edit Servers from top menu bar.
 
-  ![EditServers](./.attachments/editserver.png)
+<div style="text-align: left;">
+  <img src="./.attachments/editserver.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
+ 
 
 - Fill out the details by ensuring your MOCA connection URL includes /service and click on 'Add/Update' button to add server information.
   - If the URL is missing /service, add the connection details for the server where you intend to run the migrator.
-  
-  ![EditServers](./.attachments/editserver1.png)
+
+<div style="text-align: left;">
+  <img src="./.attachments/editserver1.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 - Now choose a server name and click on 'Connect' button or press Alt + C.
 
-  ![EditServers1](./.attachments/server1.png)
+<div style="text-align: left;">
+  <img src="./.attachments/server1.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
-### Warehouse Migrator Cloud Connect
+## Warehouse Migrator Cloud Connect
 After successfull installation of Smart Moca Client, we have to configure the Warehouse Migrator. 
 
 To configure warehouse migrator in smart moca client, follow the instructions below:
 
 -	Go to [Smart Apps](https://apps.smart-is.com/) or scan the QR code and create your account.
-  ![SmartApp](./.attachments/smart1.png)
-  ![QRCode](./.attachments/qrcode.png)
+
+<div style="text-align: left;">
+  <img src="./.attachments/smart1.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
+
+<div style="text-align: left;">
+  <img src="./.attachments/qrcode.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 -	After signing in, open your profile by clicking on top right profile icon and select “Profile” option. 
-  ![ProfileNavigation](./.attachments/ProfileNavigation.png)
 
--	Press the Add button to create your api key. 
-  ![AppKey](./.attachments/appkey1.png)
+<div style="text-align: left;">
+  <img src="./.attachments/ProfileNavigation.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
+
+
+-	Press the Add button to create your api key.
+
+<div style="text-align: left;">
+  <img src="./.attachments/appkey1.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 - Now give description to your app key and click on "Generate" button. 
-  ![AppKey2](./.attachments/appkey2.png)
+
+<div style="text-align: left;">
+  <img src="./.attachments/appkey2.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 -	This action will generate a new one-time generated app key containing all your license information. Once the app key is generated, copy it to your clipboard. 
-  ![AppKey3](./.attachments/appkey3.png)
+
+<div style="text-align: left;">
+  <img src="./.attachments/appkey3.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 - Now navigate to the Smart Connect --> Cloud Connect from dropdown menu and enter key which is generated from website and press 'Save' Key button.
-  ![AppKey4](./.attachments/smart6.png)
+
+<div style="text-align: left;">
+  <img src="./.attachments/smart6.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 ## Launching Warehouse Migrator
 Follow below steps to launch warehouse migrator:
 
 - Once connected to the server, navigate to Addons > Smart Innovations > Warehouse Migrator.
 
-  ![Addon](./.attachments/addon1.png)
+<div style="text-align: left;">
+  <img src="./.attachments/addon1.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
 - The Warehouse Migrator will get launch, indicating that the configuration was successful and the tool is ready for use.
 
-  ![Addon1](./.attachments/addon2.png)
+  <div style="text-align: left;">
+  <img src="./.attachments/addon2.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+   </div>
 
-
+---
 
 
 
