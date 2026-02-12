@@ -1,10 +1,16 @@
-# Validate Load Tab Overview
+# Validate
 
 The **Validate Load** feature ensures that the data loaded into the destination database matches the extracted data. It helps identify errors and discrepancies during the data loading process, ensuring data integrity.
 
-![](./.attachments/validate.png)
+  <div style="text-align: left;">
+     <img src="./.attachments/validate.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
 
----
 
 ### Key Features
 
@@ -13,7 +19,6 @@ The **Validate Load** feature ensures that the data loaded into the destination 
   - **Error Logs**
     - Provides error logs in case of discrepancies or issues during the data loading, aiding in troubleshooting.
 
----
 
 ### Validate Load Components
 
@@ -34,9 +39,10 @@ The **Validate Load** feature ensures that the data loaded into the destination 
 - **Save Results**
   - Saves the validation results in CSV format for record-keeping or further analysis.
 
----
 
 ### Notes
 
   - **Data Validation** is crucial for ensuring the integrity of data after it has been loaded into the destination server.
   - **Error Logs** offer a detailed record of issues to assist in resolving any discrepancies that may arise during the loading process.
+
+---

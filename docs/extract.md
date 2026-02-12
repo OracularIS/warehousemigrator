@@ -1,4 +1,4 @@
-# Extract Tab Overview
+# Extract 
 
 The extraction process is customizable, allowing users to extract data based on their specific needs, whether it's for an entire warehouse, certain modules, or individual tables.
     ![](./.attachments/extract.png)
@@ -11,11 +11,25 @@ The extraction process is customizable, allowing users to extract data based on 
     - **Specify Modules and Exclude Tables:**  
       Users can fine-tune the extraction process by selecting only relevant modules or tables and excluding unnecessary ones. This is particularly useful for focusing on specific aspects of warehouse data.
 
-        ![](./.attachments/table_extract.png)
+      <div style="text-align: left;">
+        <img src="./.attachments/table_extract.png"
+       alt="EditServers"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
     - When a user selects a specific module (e.g., ITEM) from the Specific Modules list, the Exclude Tables section should dynamically display only the tables related to the selected module. Users should be able to select and exclude multiple tables from this filtered list during extraction.
 
-        ![](./.attachments/extract2.png)
+        <div style="text-align: left;">
+          <img src="./.attachments/extract2.png"
+            alt="EditServers"
+            style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+                    border: 2px solid #000000; border-radius: 4px;"
+            onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+            ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+        </div>
 
     - If no specific module is selected, users can still exclude multiple tables by manually selecting them from the Exclude Tables list.
 
@@ -39,7 +53,15 @@ The extraction process is customizable, allowing users to extract data based on 
 
     - **Extract Preferences:**  
       The Extract Preference feature allows users to customize their data extraction process by excluding specific columns from the output. This ensures greater control over the extracted data, allowing users to focus on only the relevant information.
-    ![](./.attachments/extract_preference.png)
+
+       <div style="text-align: left;">
+         <img src="./.attachments/extract_preference.png"
+          alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+        </div>
 
     ### **Option For Extract Preferences**
 
@@ -62,3 +84,5 @@ The extraction process is customizable, allowing users to extract data based on 
     - **Customizable Extraction:** Extract entire warehouses, specific modules, or individual tables with options to exclude unnecessary data
     - **Extract Preferences:** Fine-tune output by excluding columns, hiding ID fields, or focusing on critical data.
     - **Test and Log Features:** Preview extractions with a test run and access detailed logs for troubleshooting and verification.
+
+    ---
