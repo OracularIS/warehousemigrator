@@ -1,15 +1,30 @@
 # Settings
 
-**Smart Warehouse** offers robust configuration options, allowing users to tailor both server settings and personal preferences to optimize their experience.
+Warehouse Migrator offers robust configuration options, allowing users to tailor both server settings and personal preferences to optimize their experience.
   
-![](./.attachments/setting1.png)
+  <div style="text-align: left;">
+     <img src="./.attachments/setting1.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div> 
 
 
 ## User Preferences
 
 Used to set up the directory for storing logs and data. This screen allows customization of log file and status file naming conventions.
 
-![](./.attachments/user_preference.png)
+  <div style="text-align: left;">
+     <img src="./.attachments/user_preference.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
 
 - **Directories Setup**
   - Allows users to specify paths for the following directories:
@@ -41,7 +56,15 @@ Used to set up the directory for storing logs and data. This screen allows custo
 
 Used to add a server connection to either the source or destination.
 
-![](./.attachments/server.png)
+  <div style="text-align: left;">
+     <img src="./.attachments/server.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
 
 - **Server Name**
   - Dropdown menu to select or input the name of the server to configure.

@@ -9,7 +9,7 @@ Whether upgrading system versions, promoting changes across environments, or clo
 Migrate a warehouse configuration from a lower environment (e.g., Development) to a higher environment (e.g., Production).
 
 - **Supported Versions**
-    - Migration from version 2017 to any higher supported version.
+    - Migration from version 2017 to production environment.
     - Migration between environments running the same version.
 
 ## Version Upgrade Migration
