@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](./readme.md)
-- [Why Warehouse Migrator?](./why-warehousemigrator.md)
+- [Concept](./concept.md)
 - [Migration Scenarios](./scenarios.md)
 - [Getting Started](./quick-start.md)
 - [Feature Overview](./features-overview.md)

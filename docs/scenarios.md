@@ -6,33 +6,51 @@ Whether upgrading system versions, promoting changes across environments, or clo
 
 ## Environment-to-Environment Migration
 
-Migrate a warehouse configuration from a lower environment (e.g., Development) to a higher environment (e.g., Production).
+This scenario ensures that configurations validated in lower environments are promoted to production without manual re-entry.
+
+- **Primary Path:** Development (DEV) → Quality Assurance (TEST) → Production (PROD).
 
 - **Supported Versions**
-    - Migration from version 2017 to production environment.
-    - Migration between environments running the same version.
+    - Direct migration between environments on the same version.
+    - Migration from v2017 to any higher supported version.
 
 ## Version Upgrade Migration
 
-Migrate warehouse configuration and supported data from an older BlueYonder WMS version to a newer version.
+Migrate warehouse configuration and supported data from an older Blue Yonder WMS version to a newer release.
 
-- **Supported Versions**
-    - Migrating from version 8.2 to any higher version.
+This scenario is particularly useful during system upgrades where schema changes and structural differences must be carefully managed.
+
+**Supported Cases:**
+
+- Migration from version 8.2 to any higher supported version  
 
 ## Warehouse-to-Warehouse Migration Within the Same Instance
 
-Migrate configuration and data from one warehouse to another within the same server instance.
+Clone or replicate configuration and supported data from one warehouse to another within the same server instance.
+
+This scenario is commonly used for:
+
+- New warehouse setup  
+- Multi-site deployments  
+- Standardized configuration rollout  
 
 ## Module-Specific Migration
 
-Migrate only selected modules instead of the entire warehouse configuration.
+Migrate selected modules instead of the entire warehouse configuration. This allows targeted changes without impacting unrelated configurations.
 
-- **Supported Versions**
-    - Migrating only location setup.
-    - Migrating only user roles or inventory configuration.
+**Examples include:**
+
+- Location setup only   
+- Inventory-related configuration 
 
 ## Selective Table Exclusion
 
 Exclude specific tables from migration based on business or technical requirements.
+
+This capability provides greater control over what is migrated, allowing organizations to:
+
+- Prevent unnecessary data transfer  
+- Avoid overwriting environment-specific configurations  
+- Maintain controlled and phased rollouts  
 
 ---
