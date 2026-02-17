@@ -1,88 +1,186 @@
 # Extract 
 
-The extraction process is customizable, allowing users to extract data based on their specific needs, whether it's for an entire warehouse, certain modules, or individual tables.
-    ![](./.attachments/extract.png)
+The Extract feature is the first and most critical phase of the Warehouse Migrator lifecycle. It captures a structured snapshot of warehouse configuration data from the source environment and prepares it for controlled migration.
 
-- **Extraction Options**
+## Purpose 
+The Extract feature is designed to:
 
-    - **Assign Warehouse ID and Locale:**    
-      These options enable users to specify the warehouse and locale settings from which they want to extract data.
+- **Capture Configuration Snapshot**  
+  Create a reliable snapshot of the warehouse configuration at a specific point in time.
 
-    - **Specify Modules and Exclude Tables:**  
-      Users can fine-tune the extraction process by selecting only relevant modules or tables and excluding unnecessary ones. This is particularly useful for focusing on specific aspects of warehouse data.
+- **Maintain Structured Data Export**  
+  Organize extracted data in a structured format that preserves table relationships and dependencies.
 
-      <div style="text-align: left;">
-        <img src="./.attachments/table_extract.png"
-       alt="EditServers"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+- **Prepare for Migration**  
+  Generate migration-ready files that can be loaded into a target environment in a controlled manner.
 
-    - When a user selects a specific module (e.g., ITEM) from the Specific Modules list, the Exclude Tables section should dynamically display only the tables related to the selected module. Users should be able to select and exclude multiple tables from this filtered list during extraction.
+## Use Cases
 
-        <div style="text-align: left;">
-          <img src="./.attachments/extract2.png"
-            alt="EditServers"
-            style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-                    border: 2px solid #000000; border-radius: 4px;"
-            onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-            ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-        </div>
+Depending on the migration scenario, different extraction strategies can be applied:
 
-    - If no specific module is selected, users can still exclude multiple tables by manually selecting them from the Exclude Tables list.
+**New Warehouse Setup - Full Extraction:**   
+Extract the complete warehouse configuration to replicate the entire setup in a new environment.
 
-    - **Specify Extract Path and Name:**  
-      These options allow users to specify where the extracted data will be saved and name the extracted folder. This customization helps users organize their data effectively. Default Extract Path can be set in **Settings > User Preferences**.
+**Module Upgrade - Module Specific Extraction:** 
+Extract only the affected module to minimize impact and ensure focused migration.
 
-    - **Rename Target Warehouse:**  
-      This option allows users to rename the extracted warehouse folder.
+**Custom Table Fix - Specific Table Extraction**
+Extract only the relevant table(s) to address targeted configuration updates.
 
-    - **Condensed Output:**  
-      This feature streamlines the extraction process by excluding empty tables, reducing the size and complexity of the extracted data.
 
-    - **Clear All:**  
-      The "Clear All" option resets the application, including the Source Server and login information, allowing users to start fresh.
+## How to Extract 
 
-    - **Test Extract:**  
-      Before performing a full extraction, users can run a test extract to preview the first 10 rows of each table. This ensures that the correct data is being targeted without committing to a full extraction.
+Follow the steps below to perform a warehouse configuration extraction:
 
-    - **Extract:**  
-      This option allows performing a full extraction. It enables further customization by letting users exclude specific columns from the extraction, such as ID fields or non-essential columns, tailoring the output to their precise requirements.
+1. Navigate to the **Configuration** tab and connect to the source environment using one of the following methods:
+  - **Cloud Connect**, or  
+  - **XML Configuration File** 
 
-    - **Extract Preferences:**  
-      The Extract Preference feature allows users to customize their data extraction process by excluding specific columns from the output. This ensures greater control over the extracted data, allowing users to focus on only the relevant information.
-
-       <div style="text-align: left;">
-         <img src="./.attachments/extract_preference.png"
-          alt="EditServers"
+  <div style="text-align: left;">
+     <img src="./.attachments/config.png"
+        alt="EditServers"
           style="height: 200px; margin: auto; display: block; cursor: zoom-in;
           border: 2px solid #000000; border-radius: 4px;"
           onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
           ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-        </div>
+    </div>
 
-    ### **Option For Extract Preferences**
+Enter your server credentials and establish the connection.  Once connected successfully, you are ready to proceed with extraction.
 
-    1. **Exclude Columns**: Users can selectively exclude columns from the extract through an intuitive dialogue box. This interface allows for easy customization of the extracted data.
-    2. **Hide ID Fields**: Within the dialogue box, users can choose to hide ID fields. By default, certain column names are pre-selected, but users can toggle these options on or off as needed. Additional columns can also be added to the exclusion list for further customization.
-    3. **Hide Warehouse ID**: When enabled, the WH_ID (Warehouse ID) column is excluded from the extract file. This ensures that the Warehouse ID is omitted from the extracted data, maintaining data privacy and relevance.
-    4. **Hide ID Columns**: When this option is selected, all ID columns are excluded from the extract files. This simplifies the extracted data by removing potentially non-essential identifier fields.
-    5. **Add Columns to Hide**: This functionality allows users to add additional columns to the exclusion list as required. Users can specify any non-essential or irrelevant columns for exclusion.
-    6. **Hide Non-Essential Columns**: When checked, this option excludes all non-essential ID columns from the extract files. It streamlines the data, ensuring only critical fields are retained.
-    7. **Add Non-Essential Columns to Hide**: This feature enables users to specify additional non-essential columns for exclusion, offering greater flexibility and precision.
 
-    - **Log File**
+2. Move to the **Extract** tab and select the **Warehouse ID** you want to extract from the dropdown. 
 
-        After the extraction is complete, a log file is automatically generated. This file provides a detailed record of the extraction process, which is useful for:
+  <div style="text-align: left;">
+     <img src="./.attachments/extract1.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
 
-        - Troubleshooting issues.
-        - Verifying that the extraction was successful.
-  
-    ### Key Features:
-    - **Customizable Extraction:** Extract entire warehouses, specific modules, or individual tables with options to exclude unnecessary data
-    - **Extract Preferences:** Fine-tune output by excluding columns, hiding ID fields, or focusing on critical data.
-    - **Test and Log Features:** Preview extractions with a test run and access detailed logs for troubleshooting and verification.
+3.  If required, enable additional options to:
+  - Extract specific modules only, or  
+  - Exclude certain tables from the extraction  
 
-    ---
+    <div style="text-align: left;">
+     <img src="./.attachments/exclude.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+    When a specific module is selected, only tables related to that module are available for exclusion. If no module is selected, tables can still be manually excluded.
+
+4. Choose the location where the extract folder will be created.   
+
+     By default, the extract path is set to the **WhConfig** folder inside the application directory. 
+
+    <div style="text-align: left;">
+     <img src="./.attachments/path.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+
+     This path can also be configured in **Settings > User Preferences**.
+
+5. Now enter a name for the extract folder. 
+
+    <div style="text-align: left;">
+     <img src="./.attachments/name.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+     If no name is provided, the system automatically uses the selected **Warehouse Name** as the default folder name.
+
+6. The **Target Warehouse** option allows you to assign a different warehouse name within the extracted files.
+
+    <div style="text-align: left;">
+     <img src="./.attachments/target.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+    This is particularly useful when:
+
+    - Cloning a warehouse configuration  
+    - Preparing extract files for a new warehouse setup  
+    - Performing warehouse-to-warehouse migration within the same instance  
+
+    If not specified, the source warehouse name is retained in the extract.
+
+7. Before running a full extraction, click **Test Extract**.
+
+    <div style="text-align: left;">
+     <img src="./.attachments/testextract.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+    This will:
+
+    - Retrieve the first 10 rows of each selected table  
+    - Allow verification of selected modules and exclusions  
+    - Confirm that the correct data is being targeted 
+
+8. Click **Extract** to begin the full extraction process.
+
+    <div style="text-align: left;">
+     <img src="./.attachments/process.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+    During execution:
+
+    - Data is organized into structured folders  
+    - Each folder follows a defined sequence number  
+    - The sequence maintains parent-child table relationships  
+    - The same order is preserved during the Load phase 
+
+9. The **Clear All** button resets:
+
+    <div style="text-align: left;">
+     <img src="./.attachments/clear.png"
+        alt="EditServers"
+          style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+          border: 2px solid #000000; border-radius: 4px;"
+          onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+          ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
+
+    - Source server connection  
+    - Login credentials  
+    - Selected warehouse and extraction settings  
+
+    This option allows users to start a fresh extraction session without residual configuration.
+
+## Review Extract Output
+Once extraction is completed:
+
+- A structured extract folder is generated at the selected path  
+- Folder names may include date/version identifiers  
+- A migration log file is automatically created  
+
+The log file provides a detailed record of the extraction process for validation, troubleshooting, and audit purposes.
+
+---
