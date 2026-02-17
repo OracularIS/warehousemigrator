@@ -32,9 +32,7 @@ Extract only the relevant table(s) to address targeted configuration updates.
 
 Follow the steps below to perform a warehouse configuration extraction:
 
-1. Navigate to the **Configuration** tab and connect to the source environment using one of the following methods:
-  - **Cloud Connect**, or  
-  - **XML Configuration File** 
+1. Navigate to the **Configuration file** tab and connect to the source environment. Select the Smart Cloud or XML file as required. 
 
   <div style="text-align: left;">
      <img src="./.attachments/config.png"
