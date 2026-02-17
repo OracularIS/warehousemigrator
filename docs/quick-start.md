@@ -4,32 +4,11 @@ This section will guide you through the initial steps to get you up and running 
 
 ## Pre-Requisites for using Warehouse Migrator
 
-Following are the pre-requisites before launching warehouse migrator:
-
-- **System Requirements**
-
-  Ensure your system meets the following minimum requirements before proceeding:
-
-  - Operating System:
-    <dd>- Windows 7 or later</dd>
-  - Processor:
-    <dd>- Intel Core i3 or equivalent
-  - Memory:
-    <dd>- 4 GB RAM</dd>
-  - Storage:
-    <dd>- 500 MB available space</dd>
-  - Internet Connection: 
-    <dd>- Required for initial setup and updates</dd>
-  - Java Version: 
-    <dd>- Java 1.8 or higher</dd>
-
 - **Smart Moca Client Installation**
 
   To use the Warehouse Migrator tool, the MOCA Client must be installed. 
 
   - If not installed, follow the instructions at [Smart Moca Client-Installation](https://oracularis.github.io/mocaclient/#/./getting-started?id=installation).
-  
-
 
   This process will allow you to launch warehouse migrator within Smart Moca Client successfully.
 
